@@ -1,0 +1,1680 @@
+srcFiles:        ../src
+run:             true
+version:         1.6.1
+httpServer: 
+	domain:               null
+	_events: 
+	_eventsCount:         3
+	_connections:         0
+	_handle: 
+		bytesRead:       0
+		_externalStream: 
+		fd:              -1
+		reading:         false
+		owner:           ~httpServer
+		onread:          null
+		writeQueueSize:  0
+	_usingSlaves:         false
+	_slaves: 
+		(empty array)
+	_unref:               false
+	allowHalfOpen:        true
+	pauseOnConnect:       false
+	httpAllowHalfOpen:    false
+	timeout:              120000
+	_pendingResponseData: 0
+	_connectionKey:       6::::88
+lastNodeId:      32
+lastPlayerId:    1
+clients: 
+	(empty array)
+socketCount:     0
+nodes: 
+	- 
+		gameServer:     ~
+		owner:          null
+		color: 
+			r: 255
+			b: 7
+			g: 72
+		radius:         211.1770991608286
+		_size:          14.531933772242034
+		_mass:          2.111770991608286
+		cellType:       1
+		isSpiked:       false
+		isAgitated:     false
+		killedBy:       null
+		isMoving:       false
+		boostDistance:  0
+		boostDirection: 
+			x: 1
+			y: 0
+		tickOfBirth:    0
+		nodeId:         1
+		position: 
+			x: -6580.928112362624
+			y: 6195.184586651534
+		quadItem: 
+			cell:      ~nodes~0
+			bound: 
+				minx: -6595.460046134866
+				miny: 6180.652652879292
+				maxx: -6566.396178590382
+				maxy: 6209.716520423776
+			_quadNode: 
+				halfWidth:  7071.067811865476
+				halfHeight: 7071.067811865476
+				bound: 
+					minx:   -7071.067811865476
+					miny:   -7071.067811865476
+					maxx:   7071.067811865476
+					maxy:   7071.067811865476
+					width:  14142.135623730952
+					height: 14142.135623730952
+					cx:     0
+					cy:     0
+				childNodes: 
+					(empty array)
+				items: 
+					- ~nodes~0~quadItem
+					- 
+						cell: 
+							gameServer:     ~
+							owner:          null
+							color: 
+								r: 255
+								b: 119
+								g: 7
+							radius:         106.10446327732099
+							_size:          10.300702076913058
+							_mass:          1.06104463277321
+							cellType:       1
+							isSpiked:       false
+							isAgitated:     false
+							killedBy:       null
+							isMoving:       false
+							boostDistance:  0
+							boostDirection: 
+								x: 1
+								y: 0
+							tickOfBirth:    0
+							nodeId:         2
+							position: 
+								x: 4658.758719309686
+								y: -6408.101231212263
+							quadItem:       ~nodes~0~quadItem~_quadNode~items~1
+						bound: 
+							minx: 4648.458017232773
+							miny: -6418.401933289176
+							maxx: 4669.059421386599
+							maxy: -6397.80052913535
+						_quadNode: ~nodes~0~quadItem~_quadNode
+					- 
+						cell: 
+							gameServer:     ~
+							owner:          null
+							color: 
+								r: 255
+								b: 241
+								g: 7
+							radius:         130.93490411882112
+							_size:          11.44267906212619
+							_mass:          1.3093490411882112
+							cellType:       1
+							isSpiked:       false
+							isAgitated:     false
+							killedBy:       null
+							isMoving:       false
+							boostDistance:  0
+							boostDirection: 
+								x: 1
+								y: 0
+							tickOfBirth:    0
+							nodeId:         3
+							position: 
+								x: 6263.946086831938
+								y: -4838.153275298375
+							quadItem:       ~nodes~0~quadItem~_quadNode~items~2
+						bound: 
+							minx: 6252.503407769812
+							miny: -4849.595954360501
+							maxx: 6275.388765894065
+							maxy: -4826.710596236248
+						_quadNode: ~nodes~0~quadItem~_quadNode
+					- 
+						cell: 
+							gameServer:     ~
+							owner:          null
+							color: 
+								r: 255
+								b: 7
+								g: 39
+							radius:         170.26048837442326
+							_size:          13.048390259891189
+							_mass:          1.7026048837442327
+							cellType:       1
+							isSpiked:       false
+							isAgitated:     false
+							killedBy:       null
+							isMoving:       false
+							boostDistance:  0
+							boostDirection: 
+								x: 1
+								y: 0
+							tickOfBirth:    0
+							nodeId:         4
+							position: 
+								x: -1385.3855253154215
+								y: 4006.352744130567
+							quadItem:       ~nodes~0~quadItem~_quadNode~items~3
+						bound: 
+							minx: -1398.4339155753128
+							miny: 3993.3043538706756
+							maxx: -1372.3371350555303
+							maxy: 4019.401134390458
+						_quadNode: ~nodes~0~quadItem~_quadNode
+					- 
+						cell: 
+							gameServer:     ~
+							owner:          null
+							color: 
+								r: 255
+								b: 7
+								g: 205
+							radius:         200.3094010404305
+							_size:          14.153070375025713
+							_mass:          2.003094010404305
+							cellType:       1
+							isSpiked:       false
+							isAgitated:     false
+							killedBy:       null
+							isMoving:       false
+							boostDistance:  0
+							boostDirection: 
+								x: 1
+								y: 0
+							tickOfBirth:    0
+							nodeId:         5
+							position: 
+								x: 1265.1791129652465
+								y: 837.6087485063172
+							quadItem:       ~nodes~0~quadItem~_quadNode~items~4
+						bound: 
+							minx: 1251.0260425902209
+							miny: 823.4556781312915
+							maxx: 1279.3321833402722
+							maxy: 851.7618188813428
+						_quadNode: ~nodes~0~quadItem~_quadNode
+					- 
+						cell: 
+							gameServer:     ~
+							owner:          null
+							color: 
+								r: 190
+								b: 255
+								g: 7
+							radius:         203.3600681843037
+							_size:          14.260437166661607
+							_mass:          2.033600681843037
+							cellType:       1
+							isSpiked:       false
+							isAgitated:     false
+							killedBy:       null
+							isMoving:       false
+							boostDistance:  0
+							boostDirection: 
+								x: 1
+								y: 0
+							tickOfBirth:    0
+							nodeId:         6
+							position: 
+								x: 4791.012568195172
+								y: 1177.6341778197511
+							quadItem:       ~nodes~0~quadItem~_quadNode~items~5
+						bound: 
+							minx: 4776.752131028511
+							miny: 1163.3737406530895
+							maxx: 4805.273005361833
+							maxy: 1191.8946149864128
+						_quadNode: ~nodes~0~quadItem~_quadNode
+					- 
+						cell: 
+							gameServer:     ~
+							owner:          null
+							color: 
+								r: 7
+								b: 31
+								g: 255
+							radius:         213.43225857584633
+							_size:          14.609320948485125
+							_mass:          2.134322585758463
+							cellType:       1
+							isSpiked:       false
+							isAgitated:     false
+							killedBy:       null
+							isMoving:       false
+							boostDistance:  0
+							boostDirection: 
+								x: 1
+								y: 0
+							tickOfBirth:    0
+							nodeId:         7
+							position: 
+								x: -5313.9089549834625
+								y: 3644.5619525675993
+							quadItem:       ~nodes~0~quadItem~_quadNode~items~6
+						bound: 
+							minx: -5328.518275931948
+							miny: 3629.952631619114
+							maxx: -5299.299634034977
+							maxy: 3659.1712735160845
+						_quadNode: ~nodes~0~quadItem~_quadNode
+					- 
+						cell: 
+							gameServer:     ~
+							owner:          null
+							color: 
+								r: 7
+								b: 255
+								g: 168
+							radius:         138.35084919498826
+							_size:          11.762263778498944
+							_mass:          1.3835084919498826
+							cellType:       1
+							isSpiked:       false
+							isAgitated:     false
+							killedBy:       null
+							isMoving:       false
+							boostDistance:  0
+							boostDirection: 
+								x: 1
+								y: 0
+							tickOfBirth:    0
+							nodeId:         8
+							position: 
+								x: -147.81195430304615
+								y: 2105.6452309527995
+							quadItem:       ~nodes~0~quadItem~_quadNode~items~7
+						bound: 
+							minx: -159.5742180815451
+							miny: 2093.8829671743006
+							maxx: -136.0496905245472
+							maxy: 2117.4074947312984
+						_quadNode: ~nodes~0~quadItem~_quadNode
+					- 
+						cell: 
+							gameServer:     ~
+							owner:          null
+							color: 
+								r: 7
+								b: 187
+								g: 255
+							radius:         383.2518807950968
+							_size:          19.576819986787864
+							_mass:          3.8325188079509678
+							cellType:       1
+							isSpiked:       false
+							isAgitated:     false
+							killedBy:       null
+							isMoving:       false
+							boostDistance:  0
+							boostDirection: 
+								x: 1
+								y: 0
+							tickOfBirth:    0
+							nodeId:         9
+							position: 
+								x: 5403.5047952854875
+								y: 2830.539151051409
+							quadItem:       ~nodes~0~quadItem~_quadNode~items~8
+						bound: 
+							minx: 5383.9279752986995
+							miny: 2810.962331064621
+							maxx: 5423.0816152722755
+							maxy: 2850.115971038197
+						_quadNode: ~nodes~0~quadItem~_quadNode
+					- 
+						cell: 
+							gameServer:     ~
+							owner:          null
+							color: 
+								r: 169
+								b: 255
+								g: 7
+							radius:         393.3838929081143
+							_size:          19.83390765603476
+							_mass:          3.9338389290811433
+							cellType:       1
+							isSpiked:       false
+							isAgitated:     false
+							killedBy:       null
+							isMoving:       false
+							boostDistance:  0
+							boostDirection: 
+								x: 1
+								y: 0
+							tickOfBirth:    0
+							nodeId:         10
+							position: 
+								x: -1392.7615960709109
+								y: -6892.878623356566
+							quadItem:       ~nodes~0~quadItem~_quadNode~items~9
+						bound: 
+							minx: -1412.5955037269457
+							miny: -6912.712531012601
+							maxx: -1372.927688414876
+							maxy: -6873.044715700531
+						_quadNode: ~nodes~0~quadItem~_quadNode
+					- 
+						cell: 
+							gameServer:     ~
+							owner:          null
+							color: 
+								r: 223
+								b: 255
+								g: 7
+							radius:         136.51526431760547
+							_size:          11.683974679774236
+							_mass:          1.3651526431760548
+							cellType:       1
+							isSpiked:       false
+							isAgitated:     false
+							killedBy:       null
+							isMoving:       false
+							boostDistance:  0
+							boostDirection: 
+								x: 1
+								y: 0
+							tickOfBirth:    0
+							nodeId:         11
+							position: 
+								x: -151.5910027715563
+								y: 6261.2452012074755
+							quadItem:       ~nodes~0~quadItem~_quadNode~items~10
+						bound: 
+							minx: -163.27497745133053
+							miny: 6249.561226527701
+							maxx: -139.90702809178208
+							maxy: 6272.92917588725
+						_quadNode: ~nodes~0~quadItem~_quadNode
+					- 
+						cell: 
+							gameServer:     ~
+							owner:          null
+							color: 
+								r: 84
+								b: 255
+								g: 7
+							radius:         296.66044229396124
+							_size:          17.223833553943827
+							_mass:          2.9666044229396125
+							cellType:       1
+							isSpiked:       false
+							isAgitated:     false
+							killedBy:       null
+							isMoving:       false
+							boostDistance:  0
+							boostDirection: 
+								x: 1
+								y: 0
+							tickOfBirth:    0
+							nodeId:         12
+							position: 
+								x: -4187.804648741253
+								y: -3506.96613870232
+							quadItem:       ~nodes~0~quadItem~_quadNode~items~11
+						bound: 
+							minx: -4205.028482295197
+							miny: -3524.189972256264
+							maxx: -4170.580815187309
+							maxy: -3489.7423051483765
+						_quadNode: ~nodes~0~quadItem~_quadNode
+					- 
+						cell: 
+							gameServer:     ~
+							owner:          null
+							color: 
+								r: 255
+								b: 7
+								g: 152
+							radius:         122.01673140969012
+							_size:          11.04611838655055
+							_mass:          1.2201673140969012
+							cellType:       1
+							isSpiked:       false
+							isAgitated:     false
+							killedBy:       null
+							isMoving:       false
+							boostDistance:  0
+							boostDirection: 
+								x: 1
+								y: 0
+							tickOfBirth:    0
+							nodeId:         13
+							position: 
+								x: 6374.046477610296
+								y: -3479.7846415166227
+							quadItem:       ~nodes~0~quadItem~_quadNode~items~12
+						bound: 
+							minx: 6363.000359223745
+							miny: -3490.830759903173
+							maxx: 6385.092595996847
+							maxy: -3468.7385231300723
+						_quadNode: ~nodes~0~quadItem~_quadNode
+					- 
+						cell: 
+							gameServer:     ~
+							owner:          null
+							color: 
+								r: 7
+								b: 255
+								g: 153
+							radius:         393.474425076576
+							_size:          19.83618978222824
+							_mass:          3.93474425076576
+							cellType:       1
+							isSpiked:       false
+							isAgitated:     false
+							killedBy:       null
+							isMoving:       false
+							boostDistance:  0
+							boostDirection: 
+								x: 1
+								y: 0
+							tickOfBirth:    0
+							nodeId:         14
+							position: 
+								x: 5.106207212723348
+								y: -111.12422600032824
+							quadItem:       ~nodes~0~quadItem~_quadNode~items~13
+						bound: 
+							minx: -14.729982569504891
+							miny: -130.96041578255648
+							maxx: 24.942396994951586
+							maxy: -91.28803621809999
+						_quadNode: ~nodes~0~quadItem~_quadNode
+					- 
+						cell: 
+							gameServer:     ~
+							owner:          null
+							color: 
+								r: 172
+								b: 255
+								g: 7
+							radius:         292.74901516151346
+							_size:          17.109909852524456
+							_mass:          2.9274901516151344
+							cellType:       1
+							isSpiked:       false
+							isAgitated:     false
+							killedBy:       null
+							isMoving:       false
+							boostDistance:  0
+							boostDirection: 
+								x: 1
+								y: 0
+							tickOfBirth:    0
+							nodeId:         15
+							position: 
+								x: -1971.358511126995
+								y: -1187.6969099680346
+							quadItem:       ~nodes~0~quadItem~_quadNode~items~14
+						bound: 
+							minx: -1988.4684209795194
+							miny: -1204.806819820559
+							maxx: -1954.2486012744705
+							maxy: -1170.5870001155101
+						_quadNode: ~nodes~0~quadItem~_quadNode
+					- 
+						cell: 
+							gameServer:     ~
+							owner:          null
+							color: 
+								r: 7
+								b: 233
+								g: 255
+							radius:         375.06499554366866
+							_size:          19.366594836048712
+							_mass:          3.7506499554366868
+							cellType:       1
+							isSpiked:       false
+							isAgitated:     false
+							killedBy:       null
+							isMoving:       false
+							boostDistance:  0
+							boostDirection: 
+								x: 1
+								y: 0
+							tickOfBirth:    0
+							nodeId:         16
+							position: 
+								x: -3503.716237423681
+								y: -947.1367179678582
+							quadItem:       ~nodes~0~quadItem~_quadNode~items~15
+						bound: 
+							minx: -3523.0828322597295
+							miny: -966.503312803907
+							maxx: -3484.3496425876324
+							maxy: -927.7701231318094
+						_quadNode: ~nodes~0~quadItem~_quadNode
+					- 
+						cell: 
+							gameServer:     ~
+							owner:          null
+							color: 
+								r: 38
+								b: 255
+								g: 7
+							radius:         167.18817154261993
+							_size:          12.93012650914986
+							_mass:          1.6718817154261993
+							cellType:       1
+							isSpiked:       false
+							isAgitated:     false
+							killedBy:       null
+							isMoving:       false
+							boostDistance:  0
+							boostDirection: 
+								x: 1
+								y: 0
+							tickOfBirth:    0
+							nodeId:         17
+							position: 
+								x: -1248.4230105308552
+								y: 6716.866884583045
+							quadItem:       ~nodes~0~quadItem~_quadNode~items~16
+						bound: 
+							minx: -1261.353137040005
+							miny: 6703.936758073895
+							maxx: -1235.4928840217053
+							maxy: 6729.797011092195
+						_quadNode: ~nodes~0~quadItem~_quadNode
+					- 
+						cell: 
+							gameServer:     ~
+							owner:          null
+							color: 
+								r: 30
+								b: 7
+								g: 255
+							radius:         249.36787039041192
+							_size:          15.791385955336914
+							_mass:          2.493678703904119
+							cellType:       1
+							isSpiked:       false
+							isAgitated:     false
+							killedBy:       null
+							isMoving:       false
+							boostDistance:  0
+							boostDirection: 
+								x: 1
+								y: 0
+							tickOfBirth:    0
+							nodeId:         18
+							position: 
+								x: -1592.7122812737944
+								y: 5114.611240694874
+							quadItem:       ~nodes~0~quadItem~_quadNode~items~17
+						bound: 
+							minx: -1608.5036672291312
+							miny: 5098.819854739537
+							maxx: -1576.9208953184575
+							maxy: 5130.4026266502115
+						_quadNode: ~nodes~0~quadItem~_quadNode
+					- 
+						cell: 
+							gameServer:     ~
+							owner:          null
+							color: 
+								r: 168
+								b: 7
+								g: 255
+							radius:         203.13050774866238
+							_size:          14.252386037034725
+							_mass:          2.031305077486624
+							cellType:       1
+							isSpiked:       false
+							isAgitated:     false
+							killedBy:       null
+							isMoving:       false
+							boostDistance:  0
+							boostDirection: 
+								x: 1
+								y: 0
+							tickOfBirth:    0
+							nodeId:         19
+							position: 
+								x: 1469.7013185631713
+								y: 2380.067642539312
+							quadItem:       ~nodes~0~quadItem~_quadNode~items~18
+						bound: 
+							minx: 1455.4489325261366
+							miny: 2365.8152565022774
+							maxx: 1483.953704600206
+							maxy: 2394.320028576347
+						_quadNode: ~nodes~0~quadItem~_quadNode
+					- 
+						cell: 
+							gameServer:     ~
+							owner:          null
+							color: 
+								r: 207
+								b: 7
+								g: 255
+							radius:         310.8323901297584
+							_size:          17.630439306204437
+							_mass:          3.1083239012975836
+							cellType:       1
+							isSpiked:       false
+							isAgitated:     false
+							killedBy:       null
+							isMoving:       false
+							boostDistance:  0
+							boostDirection: 
+								x: 1
+								y: 0
+							tickOfBirth:    0
+							nodeId:         20
+							position: 
+								x: -2140.827089599811
+								y: 2773.7743603602958
+							quadItem:       ~nodes~0~quadItem~_quadNode~items~19
+						bound: 
+							minx: -2158.457528906016
+							miny: 2756.143921054091
+							maxx: -2123.1966502936066
+							maxy: 2791.4047996665004
+						_quadNode: ~nodes~0~quadItem~_quadNode
+					- 
+						cell: 
+							gameServer:     ~
+							owner:          null
+							color: 
+								r: 60
+								b: 255
+								g: 7
+							radius:         152.28478493349027
+							_size:          12.3403721553886
+							_mass:          1.5228478493349027
+							cellType:       1
+							isSpiked:       false
+							isAgitated:     false
+							killedBy:       null
+							isMoving:       false
+							boostDistance:  0
+							boostDirection: 
+								x: 1
+								y: 0
+							tickOfBirth:    0
+							nodeId:         21
+							position: 
+								x: -464.3975385388476
+								y: -5126.447740414205
+							quadItem:       ~nodes~0~quadItem~_quadNode~items~20
+						bound: 
+							minx: -476.7379106942362
+							miny: -5138.788112569594
+							maxx: -452.057166383459
+							maxy: -5114.107368258817
+						_quadNode: ~nodes~0~quadItem~_quadNode
+					- 
+						cell: 
+							gameServer:     ~
+							owner:          null
+							color: 
+								r: 255
+								b: 14
+								g: 7
+							radius:         216.02631240308992
+							_size:          14.697833595570808
+							_mass:          2.1602631240308994
+							cellType:       1
+							isSpiked:       false
+							isAgitated:     false
+							killedBy:       null
+							isMoving:       false
+							boostDistance:  0
+							boostDirection: 
+								x: 1
+								y: 0
+							tickOfBirth:    0
+							nodeId:         22
+							position: 
+								x: 1598.5940795768765
+								y: 608.1100503883572
+							quadItem:       ~nodes~0~quadItem~_quadNode~items~21
+						bound: 
+							minx: 1583.8962459813058
+							miny: 593.4122167927864
+							maxx: 1613.2919131724473
+							maxy: 622.807883983928
+						_quadNode: ~nodes~0~quadItem~_quadNode
+					- 
+						cell: 
+							gameServer:     ~
+							owner:          null
+							color: 
+								r: 7
+								b: 255
+								g: 79
+							radius:         314.65922596881603
+							_size:          17.73863653071498
+							_mass:          3.1465922596881604
+							cellType:       1
+							isSpiked:       false
+							isAgitated:     false
+							killedBy:       null
+							isMoving:       false
+							boostDistance:  0
+							boostDirection: 
+								x: 1
+								y: 0
+							tickOfBirth:    0
+							nodeId:         23
+							position: 
+								x: 3861.2881495871934
+								y: 1707.9091963135088
+							quadItem:       ~nodes~0~quadItem~_quadNode~items~22
+						bound: 
+							minx: 3843.5495130564786
+							miny: 1690.1705597827938
+							maxx: 3879.026786117908
+							maxy: 1725.6478328442238
+						_quadNode: ~nodes~0~quadItem~_quadNode
+					- 
+						cell: 
+							gameServer:     ~
+							owner:          null
+							color: 
+								r: 7
+								b: 255
+								g: 142
+							radius:         159.9837571646645
+							_size:          12.648468569936224
+							_mass:          1.5998375716466449
+							cellType:       1
+							isSpiked:       false
+							isAgitated:     false
+							killedBy:       null
+							isMoving:       false
+							boostDistance:  0
+							boostDirection: 
+								x: 1
+								y: 0
+							tickOfBirth:    0
+							nodeId:         24
+							position: 
+								x: -3150.6577423417725
+								y: -6837.1183503273605
+							quadItem:       ~nodes~0~quadItem~_quadNode~items~23
+						bound: 
+							minx: -3163.3062109117086
+							miny: -6849.766818897297
+							maxx: -3138.0092737718364
+							maxy: -6824.469881757424
+						_quadNode: ~nodes~0~quadItem~_quadNode
+					- 
+						cell: 
+							gameServer:     ~
+							owner:          null
+							color: 
+								r: 7
+								b: 255
+								g: 26
+							radius:         130.21923461906565
+							_size:          11.411364275101626
+							_mass:          1.3021923461906564
+							cellType:       1
+							isSpiked:       false
+							isAgitated:     false
+							killedBy:       null
+							isMoving:       false
+							boostDistance:  0
+							boostDirection: 
+								x: 1
+								y: 0
+							tickOfBirth:    0
+							nodeId:         25
+							position: 
+								x: -5294.509964697165
+								y: -1083.0018677017051
+							quadItem:       ~nodes~0~quadItem~_quadNode~items~24
+						bound: 
+							minx: -5305.921328972267
+							miny: -1094.4132319768069
+							maxx: -5283.098600422063
+							maxy: -1071.5905034266034
+						_quadNode: ~nodes~0~quadItem~_quadNode
+					- 
+						cell: 
+							gameServer:     ~
+							owner:          null
+							color: 
+								r: 7
+								b: 255
+								g: 24
+							radius:         148.83298659397676
+							_size:          12.199712561940824
+							_mass:          1.4883298659397675
+							cellType:       1
+							isSpiked:       false
+							isAgitated:     false
+							killedBy:       null
+							isMoving:       false
+							boostDistance:  0
+							boostDirection: 
+								x: 1
+								y: 0
+							tickOfBirth:    0
+							nodeId:         26
+							position: 
+								x: 5170.326028480924
+								y: -4411.183033288012
+							quadItem:       ~nodes~0~quadItem~_quadNode~items~25
+						bound: 
+							minx: 5158.126315918983
+							miny: -4423.382745849953
+							maxx: 5182.525741042865
+							maxy: -4398.983320726071
+						_quadNode: ~nodes~0~quadItem~_quadNode
+					- 
+						cell: 
+							gameServer:     ~
+							owner:          null
+							color: 
+								r: 227
+								b: 255
+								g: 7
+							radius:         303.35519250463597
+							_size:          17.41709483538044
+							_mass:          3.0335519250463596
+							cellType:       1
+							isSpiked:       false
+							isAgitated:     false
+							killedBy:       null
+							isMoving:       false
+							boostDistance:  0
+							boostDirection: 
+								x: 1
+								y: 0
+							tickOfBirth:    0
+							nodeId:         27
+							position: 
+								x: -4889.480681529325
+								y: -6859.300560014146
+							quadItem:       ~nodes~0~quadItem~_quadNode~items~26
+						bound: 
+							minx: -4906.897776364705
+							miny: -6876.717654849526
+							maxx: -4872.063586693945
+							maxy: -6841.883465178766
+						_quadNode: ~nodes~0~quadItem~_quadNode
+					- 
+						cell: 
+							gameServer:     ~
+							owner:          null
+							color: 
+								r: 255
+								b: 83
+								g: 7
+							radius:         117.18112040639642
+							_size:          10.825022882488351
+							_mass:          1.171811204063964
+							cellType:       1
+							isSpiked:       false
+							isAgitated:     false
+							killedBy:       null
+							isMoving:       false
+							boostDistance:  0
+							boostDirection: 
+								x: 1
+								y: 0
+							tickOfBirth:    0
+							nodeId:         28
+							position: 
+								x: -7045.2047168322315
+								y: -832.1670405268442
+							quadItem:       ~nodes~0~quadItem~_quadNode~items~27
+						bound: 
+							minx: -7056.02973971472
+							miny: -842.9920634093326
+							maxx: -7034.379693949743
+							maxy: -821.3420176443558
+						_quadNode: ~nodes~0~quadItem~_quadNode
+					- 
+						cell: 
+							gameServer:     ~
+							owner:          null
+							color: 
+								r: 47
+								b: 7
+								g: 255
+							radius:         251.49776281661744
+							_size:          15.858680992334055
+							_mass:          2.514977628166174
+							cellType:       1
+							isSpiked:       false
+							isAgitated:     false
+							killedBy:       null
+							isMoving:       false
+							boostDistance:  0
+							boostDirection: 
+								x: 1
+								y: 0
+							tickOfBirth:    0
+							nodeId:         29
+							position: 
+								x: -2128.641833852241
+								y: -3642.083019520306
+							quadItem:       ~nodes~0~quadItem~_quadNode~items~28
+						bound: 
+							minx: -2144.500514844575
+							miny: -3657.94170051264
+							maxx: -2112.7831528599067
+							maxy: -3626.224338527972
+						_quadNode: ~nodes~0~quadItem~_quadNode
+					- 
+						cell: 
+							gameServer:     ~
+							owner:          null
+							color: 
+								r: 255
+								b: 243
+								g: 7
+							radius:         304.7456207243372
+							_size:          17.45696481993182
+							_mass:          3.0474562072433717
+							cellType:       1
+							isSpiked:       false
+							isAgitated:     false
+							killedBy:       null
+							isMoving:       false
+							boostDistance:  0
+							boostDirection: 
+								x: 1
+								y: 0
+							tickOfBirth:    0
+							nodeId:         30
+							position: 
+								x: 3452.9020178860883
+								y: -6671.833475483996
+							quadItem:       ~nodes~0~quadItem~_quadNode~items~29
+						bound: 
+							minx: 3435.4450530661566
+							miny: -6689.290440303928
+							maxx: 3470.35898270602
+							maxy: -6654.376510664064
+						_quadNode: ~nodes~0~quadItem~_quadNode
+					- 
+						cell: 
+							gameServer:     ~
+							owner:          null
+							color: 
+								r: 51
+								g: 255
+								b: 51
+							radius:         10000
+							_size:          100
+							_mass:          100
+							cellType:       2
+							isSpiked:       true
+							isAgitated:     false
+							killedBy:       null
+							isMoving:       false
+							boostDistance:  0
+							boostDirection: 
+								x: 1
+								y: 0
+							tickOfBirth:    0
+							nodeId:         31
+							position: 
+								x: 370.48572871776014
+								y: 3015.8651225112226
+							isMotherCell:   false
+							quadItem:       ~nodes~0~quadItem~_quadNode~items~30
+						bound: 
+							minx: 270.48572871776014
+							miny: 2915.8651225112226
+							maxx: 470.48572871776014
+							maxy: 3115.8651225112226
+						_quadNode: ~nodes~0~quadItem~_quadNode
+	- ~nodes~0~quadItem~_quadNode~items~1~cell
+	- ~nodes~0~quadItem~_quadNode~items~2~cell
+	- ~nodes~0~quadItem~_quadNode~items~3~cell
+	- ~nodes~0~quadItem~_quadNode~items~4~cell
+	- ~nodes~0~quadItem~_quadNode~items~5~cell
+	- ~nodes~0~quadItem~_quadNode~items~6~cell
+	- ~nodes~0~quadItem~_quadNode~items~7~cell
+	- ~nodes~0~quadItem~_quadNode~items~8~cell
+	- ~nodes~0~quadItem~_quadNode~items~9~cell
+	- ~nodes~0~quadItem~_quadNode~items~10~cell
+	- ~nodes~0~quadItem~_quadNode~items~11~cell
+	- ~nodes~0~quadItem~_quadNode~items~12~cell
+	- ~nodes~0~quadItem~_quadNode~items~13~cell
+	- ~nodes~0~quadItem~_quadNode~items~14~cell
+	- ~nodes~0~quadItem~_quadNode~items~15~cell
+	- ~nodes~0~quadItem~_quadNode~items~16~cell
+	- ~nodes~0~quadItem~_quadNode~items~17~cell
+	- ~nodes~0~quadItem~_quadNode~items~18~cell
+	- ~nodes~0~quadItem~_quadNode~items~19~cell
+	- ~nodes~0~quadItem~_quadNode~items~20~cell
+	- ~nodes~0~quadItem~_quadNode~items~21~cell
+	- ~nodes~0~quadItem~_quadNode~items~22~cell
+	- ~nodes~0~quadItem~_quadNode~items~23~cell
+	- ~nodes~0~quadItem~_quadNode~items~24~cell
+	- ~nodes~0~quadItem~_quadNode~items~25~cell
+	- ~nodes~0~quadItem~_quadNode~items~26~cell
+	- ~nodes~0~quadItem~_quadNode~items~27~cell
+	- ~nodes~0~quadItem~_quadNode~items~28~cell
+	- ~nodes~0~quadItem~_quadNode~items~29~cell
+	- ~nodes~0~quadItem~_quadNode~items~30~cell
+nodesVirus: 
+	- ~nodes~0~quadItem~_quadNode~items~30~cell
+nodesFood: 
+	- ~nodes~0
+	- ~nodes~0~quadItem~_quadNode~items~1~cell
+	- ~nodes~0~quadItem~_quadNode~items~2~cell
+	- ~nodes~0~quadItem~_quadNode~items~3~cell
+	- ~nodes~0~quadItem~_quadNode~items~4~cell
+	- ~nodes~0~quadItem~_quadNode~items~5~cell
+	- ~nodes~0~quadItem~_quadNode~items~6~cell
+	- ~nodes~0~quadItem~_quadNode~items~7~cell
+	- ~nodes~0~quadItem~_quadNode~items~8~cell
+	- ~nodes~0~quadItem~_quadNode~items~9~cell
+	- ~nodes~0~quadItem~_quadNode~items~10~cell
+	- ~nodes~0~quadItem~_quadNode~items~11~cell
+	- ~nodes~0~quadItem~_quadNode~items~12~cell
+	- ~nodes~0~quadItem~_quadNode~items~13~cell
+	- ~nodes~0~quadItem~_quadNode~items~14~cell
+	- ~nodes~0~quadItem~_quadNode~items~15~cell
+	- ~nodes~0~quadItem~_quadNode~items~16~cell
+	- ~nodes~0~quadItem~_quadNode~items~17~cell
+	- ~nodes~0~quadItem~_quadNode~items~18~cell
+	- ~nodes~0~quadItem~_quadNode~items~19~cell
+	- ~nodes~0~quadItem~_quadNode~items~20~cell
+	- ~nodes~0~quadItem~_quadNode~items~21~cell
+	- ~nodes~0~quadItem~_quadNode~items~22~cell
+	- ~nodes~0~quadItem~_quadNode~items~23~cell
+	- ~nodes~0~quadItem~_quadNode~items~24~cell
+	- ~nodes~0~quadItem~_quadNode~items~25~cell
+	- ~nodes~0~quadItem~_quadNode~items~26~cell
+	- ~nodes~0~quadItem~_quadNode~items~27~cell
+	- ~nodes~0~quadItem~_quadNode~items~28~cell
+	- ~nodes~0~quadItem~_quadNode~items~29~cell
+nodesEjected: 
+	(empty array)
+nodesPlayer: 
+	(empty array)
+movingNodes: 
+	(empty array)
+leaderboard: 
+	(empty array)
+leaderboardType: 49
+bots: 
+	gameServer:  ~
+	randomNames: 
+		- 1weqr
+		- 2qwer
+		- 3qwer
+		//And so on
+	nameIndex:   0
+startTime:       1496134102005
+stepDateTime:    1496134102755
+timeStamp:       1496134102736
+updateTime:      0.01792
+updateTimeAvg:   0.012456052192687988
+tickCounter:     18
+disableSpawn:    false
+config: 
+	logVerbosity:           4
+	logFileVerbosity:       5
+	serverTimeout:          300
+	serverWsModule:         ws
+	serverMaxConnections:   500
+	serverPort:             443
+	serverBind:             0.0.0.0
+	serverTracker:          0
+	serverGamemode:         0
+	serverBots:             0
+	serverViewBaseX:        1920
+	serverViewBaseY:        1080
+	serverMinScale:         0.15
+	serverSpectatorScale:   0.4
+	serverStatsPort:        88
+	serverStatsUpdate:      60
+	mobilePhysics:          0
+	serverMaxLB:            10
+	serverChat:             1
+	serverChatAscii:        1
+	separateChatForTeams:   0
+	serverName:             MultiOgar-Edited #1
+	serverWelcome1:         Welcome to MultiOgar-Edited!
+	serverWelcome2:         null
+	clientBind:             null
+	serverIpLimit:          4
+	serverMinionIgnoreTime: 30
+	serverMinionThreshold:  10
+	serverMinionInterval:   1000
+	serverScrambleLevel:    0
+	playerBotGrow:          0
+	borderWidth:            14142.135623730952
+	borderHeight:           14142.135623730952
+	foodMinSize:            10
+	foodMaxSize:            20
+	foodMinAmount:          1000
+	foodMaxAmount:          2000
+	foodSpawnAmount:        30
+	foodMassGrow:           1
+	spawnInterval:          20
+	virusMinSize:           100
+	virusMaxSize:           141.421356237
+	virusMinAmount:         50
+	virusMaxAmount:         100
+	motherCellMaxMass:      0
+	virusVelocity:          780
+	ejectSize:              36.06
+	ejectSizeLoss:          42.43
+	ejectCooldown:          3
+	ejectSpawnPercent:      0.5
+	ejectVirus:             0
+	ejectVelocity:          780
+	playerMinSize:          31.6227766017
+	playerMaxSize:          1500
+	playerMinSplitSize:     59.16079783
+	playerMinEjectSize:     59.16079783
+	playerStartSize:        31.6227766017
+	playerMaxCells:         16
+	playerSpeed:            1
+	playerDecayRate:        0.002
+	playerDecayCap:         0
+	playerRecombineTime:    30
+	playerDisconnectTime:   -1
+	playerMaxNickLength:    15
+	splitVelocity:          780
+	minionStartSize:        31.6227766017
+	minionMaxStartSize:     31.6227766017
+	disableERTP:            1
+	disableQ:               0
+	serverMinions:          0
+	collectPellets:         0
+	defaultName:            minion
+ipBanList: 
+	(empty array)
+minionTest: 
+	(empty array)
+userList: 
+	(empty array)
+badWords: 
+	- 4r5e
+	- 5h1t
+	- 5hit
+	- anal
+	- anus
+	- ar5e
+	- arrse
+	- arse
+	- asses
+	- assfucker
+	- assfukka
+	- asshole
+	- assholes
+	- asswhole
+	- b00bs
+	- b17ch
+	- b1tch
+	- ballbag
+	- balls
+	- ballsack
+	- bastard
+	- beastial
+	- beastiality
+	- bellend
+	- bestial
+	- bestiality
+	- biatch
+	- bitch
+	- bitcher
+	- bitchers
+	- bitches
+	- bitchin
+	- bitching
+	- bloody
+	- blowjob
+	- blowjobs
+	- boiolas
+	- bollock
+	- bollok
+	- boner
+	- boob
+	- boobs
+	- booobs
+	- boooobs
+	- booooobs
+	- booooooobs
+	- breasts
+	- buceta
+	- bugger
+	- butt
+	- butthole
+	- buttmuch
+	- buttplug
+	- c0ck
+	- c0cksucker
+	- cawk
+	- chink
+	- cipa
+	- cl1t
+	- clit
+	- clitoris
+	- clits
+	- cnut
+	- cock
+	- cockface
+	- cockhead
+	- cockmunch
+	- cockmuncher
+	- cocks
+	- cocksuck
+	- cocksucked
+	- cocksucker
+	- cocksucking
+	- cocksucks
+	- cocksuka
+	- cocksukka
+	- cok
+	- cokmuncher
+	- coksucka
+	- coon
+	- cox
+	- crap
+	- cum
+	- cummer
+	- cumming
+	- cums
+	- cumshot
+	- cunilingus
+	- cunillingus
+	- cunnilingus
+	- cunt
+	- cuntlick
+	- cuntlicker
+	- cuntlicking
+	- cunts
+	- cyalis
+	- cyberfuc
+	- cyberfuck
+	- cyberfucked
+	- cyberfucker
+	- cyberfuckers
+	- cyberfucking
+	- d1ck
+	- damn
+	- dick
+	- dickhead
+	- dildo
+	- dildos
+	- dink
+	- dinks
+	- dirsa
+	- dlck
+	- doggin
+	- dogging
+	- donkeyribber
+	- doosh
+	- duche
+	- dyke
+	- ejaculate
+	- ejaculated
+	- ejaculates
+	- ejaculating
+	- ejaculatings
+	- ejaculation
+	- ejakulate
+	- f4nny
+	- fag
+	- fagging
+	- faggitt
+	- faggot
+	- faggs
+	- fagot
+	- fagots
+	- fags
+	- fanny
+	- fannyflaps
+	- fannyfucker
+	- fanyy
+	- fatass
+	- fcuk
+	- fcuker
+	- fcuking
+	- feck
+	- fecker
+	- felching
+	- fellate
+	- fellatio
+	- fingerfuck
+	- fingerfucked
+	- fingerfucker
+	- fingerfuckers
+	- fingerfucking
+	- fingerfucks
+	- fistfuck
+	- fistfucked
+	- fistfucker
+	- fistfuckers
+	- fistfucking
+	- fistfuckings
+	- fistfucks
+	- flange
+	- fook
+	- fooker
+	- fuck
+	- fucka
+	- fucked
+	- fucker
+	- fuckers
+	- fuckhead
+	- fuckheads
+	- fuckin
+	- fucking
+	- fuckings
+	- fuckingshitmotherfucker
+	- fuckme
+	- fucks
+	- fuckwhit
+	- fuckwit
+	- fudgepacker
+	- fuk
+	- fuker
+	- fukker
+	- fukkin
+	- fuks
+	- fukwhit
+	- fukwit
+	- fux
+	- fux0r
+	- gangbang
+	- gangbanged
+	- gangbangs
+	- gaylord
+	- gaysex
+	- goatse
+	- god
+	- goddamn
+	- goddamned
+	- hardcoresex
+	- hell
+	- heshe
+	- hoar
+	- hoare
+	- hoer
+	- homo
+	- hore
+	- horniest
+	- horny
+	- hotsex
+	- jackoff
+	- jap
+	- jism
+	- jiz
+	- jizm
+	- jizz
+	- kawk
+	- knob
+	- knobead
+	- knobed
+	- knobend
+	- knobhead
+	- knobjocky
+	- knobjokey
+	- kock
+	- kondum
+	- kondums
+	- kum
+	- kummer
+	- kumming
+	- kums
+	- kunilingus
+	- l3i+ch
+	- l3itch
+	- labia
+	- lmfao
+	- lust
+	- lusting
+	- m0f0
+	- m0fo
+	- m45terbate
+	- ma5terb8
+	- ma5terbate
+	- masochist
+	- masterb8
+	- masterbat
+	- masterbat3
+	- masterbate
+	- masterbation
+	- masterbations
+	- masturbate
+	- mof0
+	- mofo
+	- mothafuck
+	- mothafucka
+	- mothafuckas
+	- mothafuckaz
+	- mothafucked
+	- mothafucker
+	- mothafuckers
+	- mothafuckin
+	- mothafucking
+	- mothafuckings
+	- mothafucks
+	- motherfuck
+	- motherfucked
+	- motherfucker
+	- motherfuckers
+	- motherfuckin
+	- motherfucking
+	- motherfuckings
+	- motherfuckka
+	- motherfucks
+	- muff
+	- mutha
+	- muthafecker
+	- muthafuckker
+	- muther
+	- mutherfucker
+	- n1gga
+	- n1gger
+	- nazi
+	- nigg3r
+	- nigg4h
+	- nigga
+	- niggah
+	- niggas
+	- niggaz
+	- nigger
+	- niggers
+	- nob
+	- nobhead
+	- nobjocky
+	- nobjokey
+	- numbnuts
+	- nutsack
+	- orgasim
+	- orgasims
+	- orgasm
+	- orgasms
+	- p0rn
+	- pawn
+	- pecker
+	- penis
+	- penisfucker
+	- phonesex
+	- phuck
+	- phuk
+	- phuked
+	- phuking
+	- phukked
+	- phukking
+	- phuks
+	- phuq
+	- pigfucker
+	- pimpis
+	- piss
+	- pissed
+	- pisser
+	- pissers
+	- pisses
+	- pissflaps
+	- pissin
+	- pissing
+	- pissoff
+	- poop
+	- porn
+	- porno
+	- pornography
+	- pornos
+	- prick
+	- pricks
+	- pron
+	- pube
+	- pusse
+	- pussi
+	- pussies
+	- pussy
+	- pussys
+	- rectum
+	- retard
+	- rimjaw
+	- rimming
+	- sadist
+	- schlong
+	- screwing
+	- scroat
+	- scrote
+	- scrotum
+	- semen
+	- sex
+	- sh1t
+	- shag
+	- shagger
+	- shaggin
+	- shagging
+	- shemale
+	- shit
+	- shitdick
+	- shite
+	- shited
+	- shitey
+	- shitfuck
+	- shitfull
+	- shithead
+	- shiting
+	- shitings
+	- shits
+	- shitted
+	- shitter
+	- shitters
+	- shitting
+	- shittings
+	- shitty
+	- skank
+	- slut
+	- sluts
+	- smegma
+	- smut
+	- snatch
+	- spac
+	- spunk
+	- t1tt1e5
+	- t1tties
+	- teets
+	- teez
+	- testical
+	- testicle
+	- tit
+	- titfuck
+	- tits
+	- titt
+	- tittie5
+	- tittiefucker
+	- titties
+	- tittyfuck
+	- tittywank
+	- titwank
+	- tosser
+	- turd
+	- tw4t
+	- twat
+	- twathead
+	- twatty
+	- twunt
+	- twunter
+	- v14gra
+	- v1gra
+	- vagina
+	- viagra
+	- vulva
+	- w00se
+	- wang
+	- wank
+	- wanker
+	- wanky
+	- whoar
+	- whore
+	- willies
+	- willy
+	- xrated
+border:          ~nodes~0~quadItem~_quadNode~bound
+quadTree:        ~nodes~0~quadItem~_quadNode
+gameMode: 
+	ID:                0
+	name:              Free For All
+	decayMod:          1
+	packetLB:          49
+	haveTeams:         false
+	specByLeaderboard: true
+clientBind: 
+	- NaN
+wsServer: 
+	domain:       null
+	_events: 
+	_eventsCount: 2
+	_server: 
+		domain:               null
+		_events: 
+		_eventsCount:         3
+		_connections:         0
+		_handle: 
+			bytesRead:       0
+			_externalStream: 
+			fd:              -1
+			reading:         false
+			owner:           ~wsServer~_server
+			onread:          null
+			writeQueueSize:  0
+		_usingSlaves:         false
+		_slaves: 
+			(empty array)
+		_unref:               false
+		allowHalfOpen:        true
+		pauseOnConnect:       false
+		httpAllowHalfOpen:    false
+		timeout:              120000
+		_pendingResponseData: 0
+		_connectionKey:       4:0.0.0.0:443
+	options: 
+		host:              0.0.0.0
+		port:              null
+		server:            ~wsServer~_server
+		verifyClient:      null
+		handleProtocols:   null
+		path:              null
+		noServer:          false
+		disableHixie:      false
+		clientTracking:    true
+		perMessageDeflate: false
+		maxPayload:        4096
+	path:         null
+	clients: 
+		(empty array)
+stats:           {"server_name":"MultiOgar-Edited #1","server_chat":"true","border_width":14142.135623730952,"border_height":14142.135623730952,"gamemode":"Free For All","max_players":500,"current_players":0,"alive":0,"spectators":0,"update_time":"0.000","uptime":-24935568,"start_time":1496134102005}
