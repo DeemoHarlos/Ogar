@@ -43,16 +43,15 @@ function TimeLine(){
 		}
 		res.send(JSON.stringify(updated));
 	});
-	this.data.post("*",function (req, res) {
-		res.status(404).send('Invalid request!!');
-	});
+	this.data.use('/', express.static('./'));
 }
 module.exports = TimeLine;
 
 // 啟動並等待連接
 TimeLine.prototype.startTimeLine = function(){
-	this.server.listen(port);
-	console.log('| [INFO] Timeline reporter listening at http://127.0.0.1:/' + port);
+	this.data.listen(port, function () {
+		console.log('| [INFO] Timeline reporter listening at http://127.0.0.1:/' + port);
+	});
 }
 
 TimeLine.prototype.updateData = function(game) {
