@@ -37,7 +37,9 @@ src/.settings/org.eclipse.wst.jsdt.ui.superType.name
 src/.readwarning
 
 # Prevent possible banned IP address leak
-src/ipbanlist.txt
+# src/ipbanlist.txt
 
 # Prevent user settings overwrite
-src/gameserver.ini
+# src/gameserver.ini
+
+*.sublime-*

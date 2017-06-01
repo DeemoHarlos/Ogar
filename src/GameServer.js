@@ -185,7 +185,7 @@ GameServer.prototype.start = function() {
 	if (this.config.serverStatsPort > 0) {
 		this.startStatsServer(this.config.serverStatsPort);
 	}
-	this.timeLine.startTimeLine();
+	this.timeLine.startTimeLine(this);
 };
 
 GameServer.prototype.onHttpServerOpen = function() {

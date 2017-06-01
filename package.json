@@ -11,7 +11,8 @@
         "figlet":"latest",
         "util":"latest",
         "circular-json":"latest",
-        "express":"express"
+        "express":"latest",
+        "body-parser":"latest"
     },
     "devDependencies": {},
     "scripts": {

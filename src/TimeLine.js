@@ -10,8 +10,10 @@ var url = require('url');
 var path = require('path');
 var express = require('express');
 var CircularJSON = require('circular-json');
+var bodyParser = require('body-parser');
 
-function ClientStatus(name,score) {
+function ClientStatus(id,name,score) {
+	this.id = id;
 	this.name = name;
 	this.score = score;
 }
@@ -22,36 +24,48 @@ function Time(tick) {
 }
 
 function TimeLine(){
+	this.startTime = 0;
 	this.timeLine = [];
 	this.data = express();
 	this.server = http.createServer(this.data);
-	this.data.post("update",function (req, res) {
+	this.data.use(bodyParser.json()); // for parsing application/json
+	this.data.use(bodyParser.urlencoded({ extended: true }));
+	this.data.post("/update",function (req, res) {
 		// req 是 request 本地端請求的訊息
 		// res 是 response 主機回傳到本地端的訊息
 		var updated = [];
-		var tick = req.body.tick;
-		var index = this.timeLine.length - 1;
+		try{var tick = req.body.tick;}
+		catch(err){
+			console.log("Invalid data format! Err: " + err.message);
+			res.status(400).send("Invalid data format! Err: " + err.message);
+			return;
+		}
+		console.log(" [INFO] Request from timelime reporter : tick = " + tick);
+		var l = (this.timeLine == undefined?0:this.timeLine.length);
+		var index = l-1;
 		var curtick = 0;
-		while(index > 0){
-			curtick = this.timeLine[index-1].tick;
+		while(index >= 0){
+			curtick = this.timeLine[index].tick;
 			if(this.timeLine[index].tick <= tick)break;
+			index--;
 		}
 		index ++;
-		while(index<this.timeLine.length){
+		while(index<l){
 			updated.push(this.timeLine[index]);
 			index++;
 		}
-		res.send(JSON.stringify(updated));
-	});
-	this.data.use('/', express.static('./'));
+		res.send(JSON.stringify({"time":this.startTime,"status":updated}));
+	}.bind(this));
+	this.data.use('/', express.static('../'));
 }
 module.exports = TimeLine;
 
 // 啟動並等待連接
-TimeLine.prototype.startTimeLine = function(){
+TimeLine.prototype.startTimeLine = function(game){
 	this.data.listen(port, function () {
 		console.log('| [INFO] Timeline reporter listening at http://127.0.0.1:/' + port);
 	});
+	this.startTime = game.startTime;
 }
 
 TimeLine.prototype.updateData = function(game) {
@@ -59,15 +73,21 @@ TimeLine.prototype.updateData = function(game) {
 		var clients = game.clients.valueOf();
 		var time = null;
 		for(var i=0;i<game.clients.length;i++){
+			var pid = clients[i].playerTracker.pID;
 			var name = clients[i].playerTracker._name;
 			var score = clients[i].playerTracker._score;
 			if(name == '' || score == 0)continue;
 			if(time == null)time = new Time(game.tickCounter);
-			var clientStatus = new ClientStatus(name,score);
+			var clientStatus = new ClientStatus(pid,name,score);
 			time.clients.push(clientStatus);
 		}
 		if(time != null){
 			this.timeLine.push(time);
 		}
 	}
+	fs.writeFile("log/timelinelog_" + this.startTime + ".json", JSON.stringify(this.timeLine), function(err){
+		if(err){
+			console.log("Cannot log timeline into file! Err: " + err.message);
+		}
+	})
 }
