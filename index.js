@@ -11,11 +11,11 @@ function ClientStatus(id,name,score) {
 
 function Time(tick) {
 	this.tick = tick;
-	this.clients = [];
+	this.clients = []; // ClientStatus[]
 }
-var data = {
+var data = { // the same format as the ajax response object
 	"time":0,
-	"status":[]
+	"status":[] // Time[]
 }
 var update = function(){
 	$.ajax( {
@@ -27,8 +27,6 @@ var update = function(){
 		type: 'POST',
 		dataType:'json',
 		success: function(items) {
-			// do something with items here
-			// You will likely want a template so you don't have to format the string by hand
 			var d = items.status;
 			if(data.time != items.time){
 				tick = 0;
@@ -51,7 +49,7 @@ var update = function(){
 					e.clients.forEach(function(pl){if(!ids.includes(pl.id)){
 						ids.push(pl.id);
 						svg.append("path")
-							.data([d.status])
+							.data([d])
 							.attr("class", "line")
 							.attr("id","line_"+pl.id)
 							.style("stroke","hsl("+((pl.id-1)*25)+", 100%, 65%)")
@@ -60,7 +58,7 @@ var update = function(){
 					}});
 				})
 				ids.forEach(function(e){
-					if(ids != undefined){
+					if(ids.length>0){
 						draw(data,e);
 					}
 				});
@@ -70,15 +68,13 @@ var update = function(){
 }
 setInterval(update,1000);
 
-function drawline(id){
+function drawline(id){// I copied this code from an eaelier project
 	var valueline = d3.line()
 		.x(function(d) {
-			return x(d.status.map(e => e.tick));
+			return x(d.tick); // x axis stands for the ticks passed
 		})
 		.y(function(d) {
-			return y(d.status.map(
-				e => e.clients[e.clients.findIndex(f => f.id == id)].score)
-			);
+			return y(d.clients[d.clients.findIndex(f => f.id == id)].score); // y axis stands for the score of player #'id'
 		});	
 	return valueline;
 }

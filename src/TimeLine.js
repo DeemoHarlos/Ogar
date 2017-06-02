@@ -85,9 +85,9 @@ TimeLine.prototype.updateData = function(game) {
 			this.timeLine.push(time);
 		}
 	}
-	fs.writeFile("log/timelinelog_" + this.startTime + ".json", JSON.stringify(this.timeLine), function(err){
+	/*fs.writeFile("log/timelinelog_" + this.startTime + ".json", JSON.stringify(this.timeLine), function(err){
 		if(err){
 			console.log("Cannot log timeline into file! Err: " + err.message);
 		}
-	})
+	})*/
 }
