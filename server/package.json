@@ -8,11 +8,10 @@
     "main": "src/index.js",
     "dependencies": {
         "ws": "1.1.0",
-        "figlet":"latest",
-        "util":"latest",
-        "circular-json":"latest",
-        "express":"latest",
-        "body-parser":"latest"
+        "figlet": "latest",
+        "util": "latest",
+        "express": "latest",
+        "body-parser": "latest"
     },
     "devDependencies": {},
     "scripts": {

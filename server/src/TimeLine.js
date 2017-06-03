@@ -9,7 +9,6 @@ var port = process.env.PORT || 1337;
 var url = require('url');
 var path = require('path');
 var express = require('express');
-var CircularJSON = require('circular-json');
 var bodyParser = require('body-parser');
 
 function ClientStatus(id,name,score) {
@@ -55,7 +54,7 @@ function TimeLine(){
 		}
 		res.send(JSON.stringify({"time":this.startTime,"status":updated}));
 	}.bind(this));
-	this.data.use('/', express.static('../'));
+	this.data.use('/', express.static('../../status/'));
 }
 module.exports = TimeLine;
 
