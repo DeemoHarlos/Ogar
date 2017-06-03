@@ -40,7 +40,6 @@ function TimeLine(){
 			res.status(400).send("Invalid data format! Err: " + err.message);
 			return;
 		}
-		console.log(" [INFO] Request from timelime reporter : tick = " + tick);
 		var l = (this.timeLine == undefined?0:this.timeLine.length);
 		var index = l-1;
 		var curtick = 0;
@@ -75,7 +74,8 @@ TimeLine.prototype.updateData = function(game) {
 		for(var i=0;i<game.clients.length;i++){
 			var pid = clients[i].playerTracker.pID;
 			var name = clients[i].playerTracker._name;
-			var score = clients[i].playerTracker._score;
+			var cell = clients[i].playerTracker.cells;
+			var score = (cell.length?clients[i].playerTracker._score:0);
 			if(name == '' || score == 0)continue;
 			if(time == null)time = new Time(game.tickCounter);
 			var clientStatus = new ClientStatus(pid,name,score);
