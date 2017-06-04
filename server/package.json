@@ -11,7 +11,8 @@
         "figlet": "latest",
         "util": "latest",
         "express": "latest",
-        "body-parser": "latest"
+        "body-parser": "latest",
+        "js-sha256": "latest"
     },
     "devDependencies": {},
     "scripts": {

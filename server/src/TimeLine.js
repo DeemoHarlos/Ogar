@@ -54,6 +54,24 @@ function TimeLine(){
 		}
 		res.send(JSON.stringify({"time":this.startTime,"status":updated}));
 	}.bind(this));
+	this.data.post("/join",function (req, res){
+		var coded = "6765";
+		try{var code = req.body.pwd;}
+		catch(err){
+			console.log("Invalid data! Err: " + err.message);
+			res.status(400).send("Invalid data! Err: " + err.message);
+			return;
+		}
+		if(code==coded){
+			res.send(
+				"<!DOCTYPE html><html><head><title>INFAS</title><script>window.location = \"http://140.112.196.197:8080/Ogar-client\";</script></head><body></body></html>");
+		}
+		else{
+			console.log("Invalid code : " + code);
+			res.status(400).send("Invalid code : " + code);
+			return;
+		}
+	}.bind(this));
 	this.data.use('/', express.static('../../status/'));
 }
 module.exports = TimeLine;
