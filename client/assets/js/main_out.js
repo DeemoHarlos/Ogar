@@ -1,5 +1,5 @@
 (function(wHandle, wjQuery) {
-    var CONNECTION_URL = "140.112.196.197:440", // Default Connection
+    var CONNECTION_URL = "deemo.space:440", // Default Connection
         SKIN_URL = "./skins/"; // Skin Directory
 
     wHandle.setserver = function(arg) {

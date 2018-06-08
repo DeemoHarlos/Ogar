@@ -19,7 +19,7 @@ var data = { // the same format as the ajax response object
 }
 var update = function(){
 	$.ajax( {
-		url: 'http://127.0.0.1:1337/update',
+		url: 'http://deemo.space:1337/update',
 		data: {
 			"startTime":data.time,
 			"tick":tick
