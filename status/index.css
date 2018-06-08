@@ -20,3 +20,17 @@ svg{
 	position: absolute;
 	right:0;
 }
+#highest_score_container{
+	text-align: center;
+	width: 400px;
+	height: 250px;
+	position: absolute;
+	background: rgba(256, 256, 256, 0.6);
+	right: 100px;
+	top: 50px;
+	z-index: 300;
+}
+
+#highest_score_container > table {
+	width: 100%;
+}

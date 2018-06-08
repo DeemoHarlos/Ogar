@@ -1,6 +1,8 @@
 let tick = 0;
 let ids = [];
 let playing = [];
+let history_highest = [];
+let history_highest_N = 5;
 /*var leader = []
 for(var i=0;i<20;i++) leader.push({"name":"000X","score":9999.99});
 var comp = {"name":"000X","score":9999.99};
@@ -109,6 +111,7 @@ var update = function(){
 				draw(data,e);
 			});
 			updateBoard();
+			update_highest_score(items);
 			drawAxis(data);
 		}.bind(this)
 	});
@@ -187,4 +190,48 @@ function updateBoard(){
 		}
 	});
 	
+}
+function compare(a,b) {
+  	if (a.score < b.score)
+    	return 1;
+  	if (a.score > b.score)
+    	return -1;
+  	return 0;
+}
+function nth(n){
+	return n.toString() + (["st","nd","rd"][((n+90)%100-10)%10-1]||"th")
+}
+function update_highest_score(items){
+	if(history_highest.length != history_highest_N){
+		history_highest = [];
+		for(var i=0; i<history_highest_N; i++){
+			history_highest[i] = {id: -1, score: -1};
+		}
+	}
+	items.status.forEach(function(tick){
+		tick.clients.forEach(function(player){
+			if(player.score > history_highest[history_highest_N-1].score){
+				var br = false;
+				for(var i=0; i<history_highest_N; i++){
+					if(history_highest[i].id == player.id){
+						if(history_highest[i].score < player.score){
+							history_highest[i] = player;
+						}
+						br = true;
+						break;
+					}
+				}
+				if(!br){
+					history_highest[history_highest_N-1] = player;
+				}
+				history_highest.sort(compare);
+			}
+		})
+	})
+	$('#highest_score_container>table>tbody').empty();
+	for(var i=0; i<history_highest_N; i++){
+		if(history_highest[i].id != -1){
+			$('#highest_score_container>table>tbody').append('<tr><td>' + nth(i+1) + '</td><td>' + history_highest[i].name + '</td><td>' + Math.round(history_highest[i].score) + '</td></tr>')
+		}
+	}
 }
